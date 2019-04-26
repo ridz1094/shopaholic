@@ -83,5 +83,5 @@ test:
 production:
   <<: *default
   database: Shopaholic_production
-  username: Shopaholic
-  password: <%= ENV['SHOPAHOLIC_DATABASE_PASSWORD'] %>
+  username: postgres
+  password: root
