@@ -18,7 +18,7 @@
 
 $(document).on('turbolinks:load',function() {
 
-    let base_url = window.location.origin;
+    var base_url = window.location.origin;
     //location.reload();
 
     // $.ajax({
@@ -79,8 +79,8 @@ $(document).on('turbolinks:load',function() {
 
 
   $('.addToCart').click(function(){
-    let productID = $(this).data("productid");
-    let price = $(this).data("price");
+    var productID = $(this).data("productid");
+    var price = $(this).data("price");
 
     $.ajax({
       url: "/carts",
@@ -98,7 +98,7 @@ $(document).on('turbolinks:load',function() {
   });
 
   $('#checkout').click(function(){
-    let cartIds = $(this).data("cartids");
+    var cartIds = $(this).data("cartids");
     console.log(cartIds);
     $.ajax({
       url: "/purchases",
